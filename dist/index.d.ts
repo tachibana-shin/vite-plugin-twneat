@@ -1,7 +1,9 @@
 import type { Plugin } from "vite";
+import twneat from "./twneatClient";
 interface TwneatPluginOptions {
     srcDir?: string;
     twneatDir?: string;
 }
-export declare function twneatPlugin(options?: TwneatPluginOptions): Plugin;
-export { default as twneat } from "./twneatClient";
+declare function twneatPlugin(options?: TwneatPluginOptions): Plugin[];
+export default twneatPlugin;
+export { twneat };

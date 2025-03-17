@@ -1,8 +1,6 @@
 import { type BreakpointClasses } from "./utils";
 /**
- * Organize your tailwind breakpoints in neat groups, then combine them automatically and append them at the end of your file as a comment for the tailwind JIT to pick it up.
- * You must use this in conjunction with the twneat vite plugin which will regex and pick up the classes and append them to the bottom of the file as a comment.
- * The order of the vite plugin is important, it must be before the tailwindcss plugin.
+ * Read the readme file. This must be used in conjunction with the twneat vite plugin.
  * @param {BreakpointClasses} input
  * @returns {string}
  * @example
@@ -16,4 +14,5 @@ import { type BreakpointClasses } from "./utils";
  *  xl: "hidden",
  * })
  **/
-export default function twneat(input: BreakpointClasses): string;
+declare function twneat(input: BreakpointClasses): string;
+export default twneat;

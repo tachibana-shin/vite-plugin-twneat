@@ -21,6 +21,7 @@ export function processFile(inputFilePath, srcDir, twneatDir) {
     }
 }
 /**
+ * Read the readme file.
  * Process file content strings to extract twneat regex matches and then generate final tailwind strings. The matches we are looking for look like this:
  * twneat({
  *  base: "h-[20px] w-[40px]",
