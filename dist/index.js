@@ -80,3 +80,4 @@ function twneatPlugin(options = {}) {
 }
 export default twneatPlugin;
 export { twneat };
+//# sourceMappingURL=index.js.map
