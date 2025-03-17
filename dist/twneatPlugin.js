@@ -56,4 +56,3 @@ export function regexExtractTwneatStrings(text) {
     });
     return Array.from(retSet).join(" ");
 }
-//# sourceMappingURL=twneatPlugin.js.map

@@ -15,4 +15,3 @@ describe("twneat", () => {
         expect(result).toBe(expectedOutput);
     });
 });
-//# sourceMappingURL=twneatClient.test.js.map

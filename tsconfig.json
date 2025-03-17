@@ -1,20 +1,24 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "es2022",
+    "lib": ["es2022", "esnext.disposable", "dom"],
+
     "module": "ESNext",
-    "moduleResolution": "bundler",
-    "esModuleInterop": true,
-    "strict": true,
-    "declaration": true,
-    "outDir": "dist",
-    "lib": ["ES2022", "DOM"],
-    "skipLibCheck": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+
+    "moduleResolution": "Bundler",
     "verbatimModuleSyntax": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
     "isolatedModules": true,
-    "sourceMap": true
+    "preserveConstEnums": true,
+
+    "skipLibCheck": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "outDir": "dist"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
-} 
+}
