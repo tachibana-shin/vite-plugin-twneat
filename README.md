@@ -47,7 +47,7 @@ npm install vite-plugin-twneat --save-dev
 ```js
 // vite.config.js / vite.config.ts
 import { defineConfig } from "vite";
-import { twneatPlugin } from "vite-plugin-twneat";
+import twneatPlugin from "vite-plugin-twneat";
 
 export default defineConfig({
   plugins: [
