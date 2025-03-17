@@ -1,7 +1,7 @@
 import fs from "fs";
 import JSON5 from "json5";
 import path from "path";
-import { processBreakpointClasses } from "./utils";
+import { processBreakpointClasses } from "./utils.js";
 export function processFile(inputFilePath, srcDir, twneatDir) {
     try {
         if (!fs.existsSync(inputFilePath)) {
@@ -56,3 +56,4 @@ export function regexExtractTwneatStrings(text) {
     });
     return Array.from(retSet).join(" ");
 }
+//# sourceMappingURL=twneatPlugin.js.map

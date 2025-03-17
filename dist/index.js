@@ -1,8 +1,8 @@
 import fs from "fs";
 import { glob } from "glob";
 import path from "path";
-import twneat from "./twneatClient";
-import { processFile } from "./twneatPlugin";
+import twneat from "./twneatClient.js";
+import { processFile } from "./twneatPlugin.js";
 // Create twneat directory if it doesn't exist
 function createSafelistDir(twneatDir) {
     if (!twneatDir) {
@@ -80,3 +80,4 @@ function twneatPlugin(options = {}) {
 }
 export default twneatPlugin;
 export { twneat };
+//# sourceMappingURL=index.js.map

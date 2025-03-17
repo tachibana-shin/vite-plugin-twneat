@@ -1,5 +1,4 @@
-import clsx from "clsx";
-import { processBreakpointClasses } from "./utils.js";
+import { type BreakpointClasses } from "./utils";
 /**
  * Read the readme file. This must be used in conjunction with the twneat vite plugin.
  * @param {BreakpointClasses} input
@@ -15,8 +14,5 @@ import { processBreakpointClasses } from "./utils.js";
  *  xl: "hidden",
  * })
  **/
-function twneat(input) {
-    return clsx(processBreakpointClasses(input));
-}
+declare function twneat(input: BreakpointClasses): string;
 export default twneat;
-//# sourceMappingURL=twneatClient.js.map
