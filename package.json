@@ -26,9 +26,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jimydavis/twneat"
+    "url": "https://github.com/jimydavis/vite-plugin-twneat"
   },
-  "author": "Jimy Davis",
+  "author": "jimydavis",
   "license": "MIT",
   "peerDependencies": {
     "vite": ">=5.0.0"
