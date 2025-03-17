@@ -1,6 +1,6 @@
 # vite-plugin-twneat
 
-A Vite plugin that organizes Tailwind responsive prefixes into a neat and readable format. Ideal for projects using Tailwind CSS v4 and Vite.
+A Vite plugin that organizes Tailwind responsive prefixes into a neat and readable format. Only works for Tailwind v4.
 
 ## Problem
 
@@ -11,6 +11,8 @@ When working with responsive designs in Tailwind CSS, your markup can quickly be
   Content
 </div>
 ```
+
+Tailwind also does not allow you to create dynamic classes (at least as of writing this). Tailwind reads all your files and extracts all valid classes written in plain text. Previously the idea of a safelist seem to be supported explicitly in v3 (I think) but seems not to be the case anymore in v4 as it moved to a pure css config. So instead, what you can do is just chuck a bunch of classes in plaintext into a text file and tailwind will pick it up.
 
 ## Solution
 
@@ -89,6 +91,7 @@ function MyComponent() {
 3. All safelist files are placed in a single directory with the original file's directory and filename (slashes replaced with underscore) and then given the extension `.twneat`.
 4. During development, the plugin automatically updates the safelist files when you modify your code. During build, it pre-processes all files to generate safelists.
 5. "sm: h-4 p-4" etc. will become "sm:h-4 sm:p-4" but "base: h-4 p-4" becomes "h-4, p-4" - the base is dropped.
+5. You can't mark the twneat directory as gitignore - tailwind seems to ignore it in tandem when you do that.
 6. I have only tested this for react and astro, but not for anything else. However it should work on any framework.
 
 ## License
