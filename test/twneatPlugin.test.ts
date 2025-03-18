@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { regexExtractTwneatStrings } from "./twneatPlugin";
+import { regexExtractTwneatStrings } from "../src/index";
 
 describe("regexExtractTwneatStrings", () => {
   it("should ingest the contents of a file, regex twneat objects and then return a string of tailwind classes.", () => {

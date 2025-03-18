@@ -1,4 +1,5 @@
-import { type BreakpointClasses } from "./utils";
+import { BreakpointClasses } from './utils.js';
+
 /**
  * Read the readme file. This must be used in conjunction with the twneat vite plugin.
  * @param {BreakpointClasses} input
@@ -15,4 +16,5 @@ import { type BreakpointClasses } from "./utils";
  * })
  **/
 declare function twneat(input: BreakpointClasses): string;
-export default twneat;
+
+export { twneat };

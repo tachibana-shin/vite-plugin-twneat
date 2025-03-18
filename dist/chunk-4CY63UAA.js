@@ -1,0 +1,1 @@
+function n(e){if(!e||typeof e!="object")throw new Error("Input must be an object");if(Object.keys(e).length===0)throw new Error("Input object must not be empty");return Object.entries(e).flatMap(([r,t])=>!t||t.trim()===""?[]:t.trim().split(/\s+/).map(o=>r==="base"?o:`${r}:${o}`))}export{n as a};

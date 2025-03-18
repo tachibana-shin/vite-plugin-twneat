@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import twneat from "./twneatClient";
-import type { BreakpointClasses } from "./utils";
+import { twneat } from "../src/twneatClient";
+import type { BreakpointClasses } from "../src/utils";
 
 describe("twneat", () => {
   it("should take in BreakpointClasses and return a string of tailwind classes", () => {

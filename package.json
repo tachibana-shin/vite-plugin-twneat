@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-twneat",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Vite plugin that organizes Tailwind responsive prefixes into something neat and readable.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,10 +10,16 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc && node scripts/fix-imports.js",
+    "build": "rm -rf dist && tsup src",
     "prepublishOnly": "npm run build",
     "test": "vitest run",
     "test:watch": "vitest"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
   "keywords": [
     "vite-plugin",
@@ -42,6 +48,7 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "glob": "^11.0.1",
-    "json5": "^2.2.3"
+    "json5": "^2.2.3",
+    "tsup": "^8.4.0"
   }
 }

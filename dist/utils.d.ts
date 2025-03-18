@@ -1,4 +1,6 @@
-export interface BreakpointClasses {
+interface BreakpointClasses {
     [breakpoint: string]: string;
 }
-export declare function processBreakpointClasses(input: BreakpointClasses): string[];
+declare function processBreakpointClasses(input: BreakpointClasses): string[];
+
+export { type BreakpointClasses, processBreakpointClasses };

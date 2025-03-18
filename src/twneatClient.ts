@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { processBreakpointClasses, type BreakpointClasses } from "./utils";
+import { type BreakpointClasses, processBreakpointClasses } from "./utils";
 
 /**
  * Read the readme file. This must be used in conjunction with the twneat vite plugin.
@@ -20,4 +20,4 @@ function twneat(input: BreakpointClasses): string {
   return clsx(processBreakpointClasses(input));
 }
 
-export default twneat;
+export { twneat };
