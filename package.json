@@ -20,7 +20,7 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "client" :{
+    "./client": {
       "types": "./dist/twneatClient.d.ts",
       "import": "./dist/twneatClient.js"
     }
